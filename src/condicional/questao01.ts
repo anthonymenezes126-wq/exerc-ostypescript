@@ -8,6 +8,4 @@ if(valor > 0){
     console.log("Número positivo")
 }else if(valor < 0){
     console.log("Número negativo")
-}else(
-    console.log("Zero")
-)
+}else if(valor 2 == )
