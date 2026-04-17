@@ -2,7 +2,7 @@
 // para calcular a soma de todos os números de 1 até o número fornecido. (Ex: somarAte(4)
 // deve retornar 10, pois 1+2+3+4 = 10).
 
-function somarAte(numero:number){
+ function somarAte(numero:number){
     let somador = 0
     for
 }

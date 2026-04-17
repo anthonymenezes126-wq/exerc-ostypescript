@@ -1,1 +1,2 @@
-import { questao1 } from "./Repeticao/questao1";
+import { questao01 } from "./condicional/questa01";
+
