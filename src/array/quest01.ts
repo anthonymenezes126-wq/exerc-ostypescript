@@ -1,12 +1,15 @@
-let vetor:(number|string)[] = [10, 200,"Maria","Jose"]
+// 1. Mostre-me as seguintes listas, derivadas de: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// a) Números pares
+// b) Números ímpares
+// c) Todos os múltiplos de 2,3 e 4
+// d) Lista reversa
 
-//vetor.push(100)  //Adiciona elementos
-//vetor.pop()  //Remove o último elemento
-//vetor.unshift("Roxo") //Adiciona no ínicio da lista
-//vetor.shift() //tira o elemento do inicio
-//vetor.reverse() //inverte o vetor
-//vetor.sort() //Ordem númerica
-// let pateta = vetor.join(" - ") //
-
-//console.log(pateta)
-console.log(vetor)
+const vetor:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+let pares = []
+let impares = []
+let multi = []
+for(let i=0;i<lenght-1;i++){
+    if(vetor[i] % 2 == 0){
+        pares[i] = vetor [i]
+    }
+}
