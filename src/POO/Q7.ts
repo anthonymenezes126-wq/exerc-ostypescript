@@ -1,4 +1,4 @@
-Questao 07
+// Questao 07
 
 
 class Empresa{
@@ -24,6 +24,6 @@ class Empresa{
         }
 }
 
-let nome: string = String(prompt("Qual seu o nome? "))
+let nom: string = String(prompt("Qual seu o nome? "))
 let cargo: string = String(prompt("Qual o seu cargo? "))
 let salario: number = Number(prompt("Qual o seu salário? "))

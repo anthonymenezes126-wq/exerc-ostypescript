@@ -1,4 +1,4 @@
-class Retangulo {
+class Base_de_4_lados_declarados_nao_simultanio_com_1_2_3_4_lados_sendo_dois_iguais_e_outros_dois_tambem_iguais_mais_um_igauais_vira_sahur_SAHUUUR {
     base: number
     altura: number 
 
@@ -22,7 +22,9 @@ let altura = Number(prompt("Digite a altura do local:"))
 let piso = Number(prompt("Digite a área do piso:"))
 let rodape = Number(prompt("Digite o tamanho do rodapé:"))
 
-let local = new Retangulo(base, altura)
+let local = new Base_de_4_lados_declarados_nao_simultanio_com_1_2_3_4_lados_sendo_dois_iguais_e_outros_dois_tambem_iguais_mais_um_igauais_vira_sahur_SAHUUUR
+
+(base, altura)
 
 console.log("Área do local:", local.calcularArea())
 console.log("Perímetro do local:", local.calcularPerimetro())
