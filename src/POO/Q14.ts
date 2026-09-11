@@ -5,27 +5,36 @@
 class Livro{
 
     private _titulo: string
+    private _autor: string
+    private _anoPublicacao: number
+    private _disponibilidade: boolean
+
+        constructor(titulo: string, autor: string,  anopublicacao: number, disponibilidade: boolean){
+
+            this._titulo = titulo
+            this._autor = autor
+            this._anoPublicacao = anopublicacao
+            this._disponibilidade = disponibilidade
+        }
+
     public get titulo(): string {
         return this._titulo
     }
     public set titulo(value: string) {
         this._titulo = value
     }
-    private _autor: string
     public get autor(): string {
         return this._autor
     }
     public set autor(value: string) {
         this._autor = value
     }
-    private _anoPublicacao: number
     public get anoPublicacao(): number {
         return this._anoPublicacao
     }
     public set anoPublicacao(value: number) {
         this._anoPublicacao = value
     }
-    private _disponibilidade: boolean
     public get disponibilidade(): boolean {
         return this._disponibilidade
     }
@@ -33,17 +42,39 @@ class Livro{
         this._disponibilidade = value
     }
 
-    constructor(titulo: string, autor: string,  anopublicacao: number, disponibilidade: boolean){
 
-        this._titulo = titulo
-        this._autor = autor
-        this._anoPublicacao = anopublicacao
-        this._disponibilidade = disponibilidade
-    }
     public listarLivro(): void{
         console.log(`Livro: ${this._titulo} \n Autor: ${this.autor} \n Ano de publicação ${this._anoPublicacao} \n disponibilidade ${this._disponibilidade}`)
     }
 
 }
 
-let ListarLivro [] = []
+let listarLivro:Livro[] = []
+let novolivro:Livro
+let quantidade = 0
+
+quantidade = Number(prompt("Informe quantos livros será cadastrado: "))
+
+let titulo: string, autor: string, ano: number, disponibilidade: string, disp: boolean
+for(let i = 0; i<=quantidade; i++ ){
+    titulo = String(prompt("Título do Livro: "))
+    autor = String(prompt("Informe o autor: "))
+    ano = Number(prompt("Qual o ano do seu Livro: "))
+    disponibilidade = String (prompt("Informe se o livro esta dispnível S-sim || N-não" )).toUpperCase()
+
+     if(disponibilidade == "S"){
+        disp = true
+     }
+     else{
+        disp = false
+     }
+
+     novolivro = new Livro(titulo, autor, ano, disp)
+
+     listarLivro.push(novolivro)
+}
+
+for(let i=0; i<=listarLivro.length; i++){
+    listarLivro[i].listarLivro()
+
+}
