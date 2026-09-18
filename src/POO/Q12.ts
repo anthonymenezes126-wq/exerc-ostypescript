@@ -1,9 +1,4 @@
-// Uma locadora quer controlar os carros disponíveis. O sistema deve solicitar o modelo do carro, o
-// valor da diária e a quantidade de dias que o cliente deseja alugar. Crie um método que calcule o valor
-// total do aluguel e exiba o resumo da locação. Por fim,   ' o sistema deve perguntar se deseja fazer uma
-// nova locação.
-
-class controladorCarro{
+class ControladorCarro {
     private _modelo: string
     private _valor: number
     private _quant: number
@@ -21,35 +16,49 @@ class controladorCarro{
         this._valor = value
     }
    
-    public get Quant(): number {
+    public get quant(): number {
         return this._quant
     }
-    public set Quant(value: number) {
+    public set quant(value: number) {
         this._quant = value
     }
 
-    constructor(modelo: string, valor: number, Quant: number){
+    constructor(modelo: string, valor: number, quant: number){
         this._modelo = modelo
         this._valor = valor
-        this._quant = Quant
+        this._quant = quant
     }
-    calcularTotal(): number{
+
+    calcularTotal(): number {
         return this._valor * this._quant
     }
-    exibirResumo(): void{
-        let total =  this.calcularTotal()
 
+    exibirResumo(): void {
+        let total = this.calcularTotal()
+        console.log(`\n=== RESUMO DA LOCAÇÃO ===`)
         console.log(`Modelo do carro: ${this._modelo}`)
-        console.log(`Qual valor da diária R$: ${this._valor}`)
+        console.log(`Valor da diária: R$ ${this._valor.toFixed(2)}`)
         console.log(`Quantidade de dias: ${this._quant}`)
-        console.log(`Valor total: ${total}`)
+        console.log(`Valor total: R$ ${total.toFixed(2)}`)
+        console.log(`=========================\n`)
     }
 }
 
-let continua = "S"
-let modelo, dias, 
- while (continua == "S"){
-    modelo = String(prompt("Qual o modelo do seu carro: "))
-    dias = Number(prompt("Qual o valor da diária: "))
-     = Number(prompt("Qual o valor"))
- }
+let continua: string = "S"
+
+while (continua.toUpperCase() === "S") {
+    let modelo = String(prompt("Qual o modelo do seu carro: "))
+    let valorDiaria = Number(prompt("Qual o valor da diária: "))
+    let quantDias = Number(prompt("Qual a quantidade de dias: "))
+    
+    // Cria o objeto passando as variáveis corretas
+    let novaLocacao = new ControladorCarro(modelo, valorDiaria, quantDias)
+    
+    // Exibe o resumo no console
+    novaLocacao.exibirResumo()
+    
+    // Pergunta se o usuário deseja continuar e atualiza a variável do loop
+    continua = String(prompt("Deseja fazer uma nova locação? (S/N): "))
+}
+
+
