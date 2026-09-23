@@ -1,3 +1,5 @@
+export function executarQuestao2():void{
+
 class Quadrado {
     tamanho: number
 
@@ -23,3 +25,4 @@ quadrado.trocaValor(12)
 
 alert(`Novo tamanho: ${quadrado.mostrarLado()}`)
 
+}

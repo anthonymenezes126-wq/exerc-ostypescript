@@ -2,6 +2,7 @@
 // A. Atributos: Nome, Fome, Saúde e Idade
 // B. Métodos: Alterar Nome, Fome, Saúde e Idade;
 // C. Retornar Nome, Fome, Saúde e Idade
+export function executarQuestao10():void{
 
 class BichinhoVirtual{
     nome: string
@@ -43,7 +44,7 @@ let idade: number = Number(prompt("Idade do Tamagushi: "))
 
 let Tamagushi = new BichinhoVirtual(no, fome, saude, idade)
 
-let novNome: string, novaFome: number, novaSaude: number, novaIdade: number
+let n: string, novaFome: number, novaSaude: number, novaIdade: number
 
 let opcao = 0
 
@@ -57,8 +58,8 @@ while(opcao != 5){
     opcao = Number(prompt())
 
     if(opcao == 1){
-        novoNome = String(prompt("Digite o novo nome do seu Tamagushi: "))
-        Tamagushi.alterarNome(novoNome)
+        n = String(prompt("Digite o novo nome do seu Tamagushi: "))
+        Tamagushi.alterarNome(n)
 
         console.log(`Nome alterado com sucesso! 
             Novo nome: ${Tamagushi.nome}`)
@@ -87,4 +88,5 @@ while(opcao != 5){
     }else{
         console.log("OPÇÃO INVÁLIDA")
     }
+}
 }

@@ -1,7 +1,7 @@
 // Uma biblioteca precisa catalogar seus livros. Crie uma classe Livro com título, autor, ano de
 // publicação e disponibilidade (boolean). O programa deve permitir cadastrar até 15 livros via teclado,
 // listar todos os disponíveis e registrar o empréstimo de um livro pesquisado pelo título.
-
+export function executarQuestao14():void{
 class Livro{
 
     private _titulo: string
@@ -77,4 +77,5 @@ for(let i = 0; i<=quantidade; i++ ){
 for(let i=0; i<=listarLivro.length; i++){
     listarLivro[i].listarLivro()
 
+}
 }

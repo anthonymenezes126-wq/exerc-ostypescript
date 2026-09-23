@@ -2,7 +2,7 @@
 // ao usuário o nome, o cargo e o salário de vários funcionários. Para cada funcionário cadastrado, deve
 // ser criado um objeto que armazene essas informações. Ao final, o sistema deve exibir um resumo de
 // todos os funcionários cadastrados, utilizando um método da classe.
-
+export function executarQuestao8():void{
 class Cadastro{
     nome: string
     cargo: string
@@ -38,4 +38,5 @@ while(continuar != 2) {
    if (continuar > 2 || continuar < 1){
     alert("Opção inválida...")
    }
+}
 }

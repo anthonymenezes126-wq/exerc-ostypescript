@@ -1,3 +1,4 @@
+export function executarQuestao12():void{
 class ControladorCarro {
     private _modelo: string
     private _valor: number
@@ -60,5 +61,5 @@ while (continua.toUpperCase() === "S") {
     // Pergunta se o usuário deseja continuar e atualiza a variável do loop
     continua = String(prompt("Deseja fazer uma nova locação? (S/N): "))
 }
-
+}
 

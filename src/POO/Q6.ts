@@ -3,6 +3,7 @@
 // alterarNome, depósito e saque. No construtor, saldo é opcional, com valor default zero e os demais
 // atributos são obrigatórios. Por fim, faça com que esse sistema interaja com o usuário permitido que
 // ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.
+export function executarQuestao6():void{
 class Corrente {
     numConta: number
     nomeConrrentista: string
@@ -66,3 +67,4 @@ console.log("=== DADOS FINAIS ===")
 console.log("Número da conta:", corrente.numConta)
 console.log("Nome do correntista:", corrente.nomeConrrentista)
 console.log("Saldo final:", corrente.saldo)
+}

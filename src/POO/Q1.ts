@@ -1,3 +1,4 @@
+export function executarQuestao1():void{
 class Bola {
     cor: string
     circuferencia: number
@@ -27,3 +28,4 @@ bola.trocaCor("Rosa")
 
 alert(`Nova cor: ${bola.mostrarCor()}`)
 
+}

@@ -1,3 +1,4 @@
+export function executarQuestao3():void{
 class Retangulo {
     base: number
     altura: number 
@@ -39,3 +40,5 @@ retangulo.novosvalores()
 
 console.log("ÁREA: ",retangulo.calcularArea())
 console.log("Perímetro", retangulo.calcularPerimetro())
+
+}

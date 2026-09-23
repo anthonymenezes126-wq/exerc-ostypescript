@@ -1,5 +1,5 @@
 // Questao 07
-
+export function executarQuestao7():void{
 
 class Empresa{
     nome: string
@@ -27,3 +27,4 @@ class Empresa{
 let nom: string = String(prompt("Qual seu o nome? "))
 let cargo: string = String(prompt("Qual o seu cargo? "))
 let salario: number = Number(prompt("Qual o seu salário? "))
+}

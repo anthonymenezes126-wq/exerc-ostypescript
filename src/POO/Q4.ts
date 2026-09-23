@@ -1,3 +1,4 @@
+export function executarQuestao4():void{
 class Base_de_4_lados_declarados_nao_simultanio_com_1_2_3_4_lados_sendo_dois_iguais_e_outros_dois_tambem_iguais_mais_um_igauais_vira_sahur_SAHUUUR {
     base: number
     altura: number 
@@ -31,3 +32,5 @@ console.log("Perímetro do local:", local.calcularPerimetro())
 
 console.log("Quantidade de pisos:", local.calcularArea() / piso)
 console.log("Quantidade de rodapés:", local.calcularPerimetro() / rodape)
+
+}

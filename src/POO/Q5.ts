@@ -1,3 +1,4 @@
+export function executarQuestao5():void{
 class Pessoa {
     nome: string
     idade: number
@@ -54,5 +55,5 @@ console.log("Peso depois de emagrecer:", pessoa.peso)
 pessoa.crescer(0.5)
 console.log("Altura depois de crescer:", pessoa.altura)
 
-
+}
 
