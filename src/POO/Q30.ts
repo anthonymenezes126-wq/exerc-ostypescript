@@ -55,24 +55,24 @@ class PassagemEstudante extends Passagem {
     }
 }
 
-const passagens: Passagem[] = [];
+let passagens: Passagem[] = [];
 
 let continuar = "s";
 
 while (continuar === "s") {
-    const nome = prompt("Digite o nome do passageiro:") ?? "";
-    const cpf = prompt("Digite o CPF:") ?? "";
-    const valorBase = Number(prompt("Digite o valor base da passagem:"));
+    let nome = prompt("Digite o nome do passageiro:") ?? "";
+    let cpf = prompt("Digite o CPF:") ?? "";
+    let valorBase = Number(prompt("Digite o valor base da passagem:"));
 
-    const tipo = prompt(
+    let tipo = prompt(
         "Digite o tipo da passagem:\n1 - Comum\n2 - Estudante"
     );
 
     if (tipo === "1") {
-        const passagem = new PassagemComum(nome, cpf, valorBase);
+        let passagem = new PassagemComum(nome, cpf, valorBase);
         passagens.push(passagem);
     } else if (tipo === "2") {
-        const passagem = new PassagemEstudante(nome, cpf, valorBase);
+        let passagem = new PassagemEstudante(nome, cpf, valorBase);
         passagens.push(passagem);
     } else {
         console.log("Tipo de passagem inválido!");
@@ -85,7 +85,7 @@ while (continuar === "s") {
 
 console.log("===== RELATÓRIO DE PASSAGENS =====");
 
-for (const passagem of passagens) {
+for (let passagem of passagens) {
     console.log("Nome: " + passagem.getNome());
     console.log("CPF: " + passagem.getCpf());
     console.log("Valor: R$ " + passagem.calcularValor());
@@ -94,7 +94,7 @@ for (const passagem of passagens) {
 
 let faturamentoTotal = 0;
 
-for (const passagem of passagens) {
+for (let passagem of passagens) {
     faturamentoTotal = faturamentoTotal + passagem.calcularValor();
 }
 

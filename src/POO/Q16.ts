@@ -1,5 +1,4 @@
-// export function executarQuestao16(): void {
-export function executarQuestao16():void{
+ export function executarQuestao16(): void {
     abstract class Animal {
 
         private _nome: string

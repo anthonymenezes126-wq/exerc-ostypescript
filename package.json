@@ -1,8 +1,26 @@
 {
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "ts-node": "^10.9.2"
-  }
+  },
+  "name": "exerc-ostypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonymenezes126-wq/exerc-ostypescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonymenezes126-wq/exerc-ostypescript/issues"
+  },
+  "homepage": "https://github.com/anthonymenezes126-wq/exerc-ostypescript#readme"
 }

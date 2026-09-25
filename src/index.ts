@@ -1,4 +1,4 @@
-import { questao01 } from "./condicional/questao01";
+
 
 import { executarQuestao1 } from "./POO/Q1.js";
 import { executarQuestao2 } from "./POO/Q2.js";
@@ -16,6 +16,7 @@ import { executarQuestao13 } from "./POO/Q13.js";
 import { executarQuestao14 } from "./POO/Q14.js";
 import { executarQuestao15 } from "./POO/Q15.js";
 import { executarQuestao16 } from "./POO/Q16.js"
+import { executarQuestao17 } from "./POO/Q17.js"
 import { executarQuestao26 } from "./POO/Q26.js";
 import { executarQuestao30 } from "./POO/Q30.js";
 
@@ -35,4 +36,6 @@ document.getElementById('btn13')?.addEventListener("click", executarQuestao13)
 document.getElementById('btn14')?.addEventListener("click", executarQuestao14)
 document.getElementById('btn15')?.addEventListener("click", executarQuestao15)
 document.getElementById('btn16')?.addEventListener("click", executarQuestao16)
-document.getElementById('btn30')?.addEventListener("click", executarQuestao16)
+document.getElementById('btn17')?.addEventListener("click", executarQuestao17)
+document.getElementById('btn26')?.addEventListener("click", executarQuestao26)
+document.getElementById('btn30')?.addEventListener("click", executarQuestao30)

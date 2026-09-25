@@ -5,7 +5,7 @@
 // que estão na fila. Cada vez que um usuário passa pela catraca, um método deve registrar essa presença
 // em um histórico (array). Ao digitar um comando de encerramento, o programa exibe a listagem de
 // quem almoçou no dia, mostrando mensagens personalizadas para cada tipo de usuário através de um
-
+export function executarQuestao17(): void {
 abstract class Usuario {
     private id: number
     private nome: string
@@ -43,8 +43,7 @@ class Aluno extends Usuario {
         console.log(
             "Aluno " + this.getNome() +
             " do curso de " + this.curso +
-            " almoçou no refeitório."
-        )
+            " almoçou no refeitório." )
     }
 }
 
@@ -80,41 +79,41 @@ class Refeitorio {
 
     mostrarHistorico(): void {
 
-        console.log("===== USUÁRIOS QUE ALMOÇARAM =====")
+        console.log("_USUÁRIOS QUE ALMOÇARAM_")
 
-        for (const usuario of this.historico) {
-            usuario.mensagem()
+         for (let i = 0; i < this.historico.length; i++) {
+            this.historico[i].mensagem()
         }
     }
 }
 
 
-const refeitorio = new Refeitorio()
+let refeitorio = new Refeitorio()
 
 let continuar = "s"
 
 while (continuar === "s") {
 
-    const id = Number(prompt("Digite o identificador do usuário:"))
-    const nome = prompt("Digite o nome completo:") ?? ""
+  let id = Number(prompt("Digite o identificador do usuário:"))
+  let nome = prompt("Digite o nome completo:") ?? ""
 
-    const tipo = prompt(
+  let tipo = prompt(
         "Digite o tipo de usuário:\n1 - Aluno\n2 - Servidor"
     )
 
     if (tipo === "1") {
 
-        const curso = prompt("Digite o curso:") ?? ""
+      let curso = prompt("Digite o curso:") ?? ""
 
-        const aluno = new Aluno(id, nome, curso)
+      let aluno = new Aluno(id, nome, curso)
 
         refeitorio.registrarPresenca(aluno)
 
     } else if (tipo === "2") {
 
-        const departamento = prompt("Digite o departamento:") ?? ""
+      let departamento = prompt("Digite o departamento:") ?? ""
 
-        const servidor = new Servidor(id, nome, departamento)
+      let servidor = new Servidor(id, nome, departamento)
 
         refeitorio.registrarPresenca(servidor)
 
@@ -130,3 +129,5 @@ while (continuar === "s") {
 
 
 refeitorio.mostrarHistorico()
+
+}
