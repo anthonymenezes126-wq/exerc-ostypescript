@@ -83,13 +83,12 @@ while (continuar === "s") {
     ) ?? "n";
 }
 
-console.log("===== RELATÓRIO DE PASSAGENS =====");
+console.log(" RELATÓRIO DE PASSAGENS ");
 
 for (let passagem of passagens) {
     console.log("Nome: " + passagem.getNome());
     console.log("CPF: " + passagem.getCpf());
     console.log("Valor: R$ " + passagem.calcularValor());
-    console.log("-------------------------");
 }
 
 let faturamentoTotal = 0;

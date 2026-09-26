@@ -69,7 +69,7 @@ let opcao = "0"
 while (opcao !== "4") {
 
     opcao = prompt(
-        "===== MENU =====\n" +
+        "- MENU -\n" +
         "1 - Depositar\n" +
         "2 - Sacar\n" +
         "3 - Ver saldo\n" +

@@ -70,7 +70,7 @@ let horista = new FuncionarioHorista("João", 20, 160);
 let assalariado = new FuncionarioAssalariado("Maria", 3500);
 
 
-console.log("===== FUNCIONÁRIOS =====");
+console.log("_FUNCIONÁRIOS_");
 
 console.log("Nome:", horista.getNome());
 console.log("Salário: R$", horista.calcularSalario().toFixed(2));

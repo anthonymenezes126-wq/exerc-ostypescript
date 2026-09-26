@@ -122,10 +122,10 @@
 
     while (continuar === "s") {
 
-        const nome = prompt("Digite o nome do animal:") ?? ""
-        const especie = prompt("Digite a espécie:") ?? ""
-        const idade = Number(prompt("Digite a idade:"))
-        const sexo = prompt("Digite o sexo:") ?? ""
+        const nome = prompt("Digite o nome do animal: ") ?? ""
+        const especie = prompt("Digite a espécie: ") ?? ""
+        const idade = Number(prompt("Digite a idade: "))
+        const sexo = prompt("Digite o sexo: ") ?? ""
 
         const tipo = prompt(
             "Digite o tipo do animal:\n1 - Mamífero\n2 - Ave"
@@ -179,7 +179,7 @@
     }
 
 
-    console.log("===== MAMÍFEROS =====")
+    console.log("+ MAMÍFEROS +")
 
     for (const animal of animais) {
 
@@ -195,7 +195,7 @@
     }
 
 
-    console.log("===== AVES =====")
+    console.log("& AVES &")
 
     for (const animal of animais) {
 
@@ -217,7 +217,7 @@
     }
 
 
-    console.log("===== HORA DA ALIMENTAÇÃO =====")
+    console.log("+ HORA DA ALIMENTAÇÃO +")
 
     for (const animal of animais) {
 

@@ -35,25 +35,25 @@ class Pessoa {
 
 let pessoa = new Pessoa("João", 18, 70, 1.70)
 
-console.log("Nome:", pessoa.nome)
-console.log("Idade:", pessoa.idade)
-console.log("Peso:", pessoa.peso)
-console.log("Altura:", pessoa.altura)
+console.log("Nome: ", pessoa.nome)
+console.log("Idade: ", pessoa.idade)
+console.log("Peso: ", pessoa.peso)
+console.log("Altura: ", pessoa.altura)
 
 pessoa.envelhecer()
 
 console.log("Depois de envelhecer:")
-console.log("Idade:", pessoa.idade)
-console.log("Altura:", pessoa.altura)
+console.log("Idade: ", pessoa.idade)
+console.log("Altura: ", pessoa.altura)
 
 pessoa.engordar(2)
-console.log("Peso depois de engordar:", pessoa.peso)
+console.log("Peso depois de engordar: ", pessoa.peso)
 
 pessoa.emagrecer(1)
-console.log("Peso depois de emagrecer:", pessoa.peso)
+console.log("Peso depois de emagrecer: ", pessoa.peso)
 
 pessoa.crescer(0.5)
-console.log("Altura depois de crescer:", pessoa.altura)
+console.log("Altura depois de crescer: ", pessoa.altura)
 
 }
 
