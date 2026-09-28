@@ -7,11 +7,14 @@
 // de pedidos, calcula os valores finais de cada um (aplicando as taxas quando necessário) e exibe o
 // faturamento total do estabelecimento.
 
-class Pedido{
+abstract class Pedido{
     private _numeroMesa: number
     private _valorIngredientes: number
 
-    constructor()
+    constructor(numeroMesa: number, valorIngredientes: number){
+        this._numeroMesa = numeroMesa
+        this._valorIngredientes = valorIngredientes
+    }
     public get numeroMesa(): number {
         return this._numeroMesa
     }
@@ -25,4 +28,40 @@ class Pedido{
     public set valorIngredientes(value: number) {
         this._valorIngredientes = value
     }
+
+    abstract calcularValor(): number
+
+    abstract exibirFatura(): number{
+        alert(
+            
+        )
+    }
+
+}
+class PedidoEntrega extends Pedido{
+    private _taxa: number
+    private _endereco: string
+
+    public get endereco_1(): string {
+        return this._endereco
+    }
+
+    public get taxa(): number {
+        return this._taxa
+    }
+
+    constructor(numeroMesa: number, valorIngredientes: number, taxa: number,  endereco: string){
+        super(numeroMesa, valorIngredientes)
+        this._taxa = taxa
+        this._endereco = endereco
+    }
+
+   calcularValor(): number {
+        return this.valorIngredientes + this.taxa
+    }
+    exibirFatura(): number{
+
+}
+class PedidoLocal extends Pedido{
+    constructor()
 }
