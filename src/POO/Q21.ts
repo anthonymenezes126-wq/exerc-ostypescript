@@ -1,67 +1,10 @@
-// Gestão de Pedidos de uma Pizzaria Local
-// Para modernizar o atendimento de uma pizzaria, crie um sistema de pedidos. Um pedido base tem o
-// número da mesa e o valor dos ingredientes. O Pedido de Entrega (Delivery) herda as propriedades do
-// pedido base, mas precisa incluir uma taxa de entrega protegida e o endereço de destino. O software
-// deve interagir com o atendente perguntando os detalhes de cada pedido feito na noite. Conforme os
-// pedidos são criados, eles entram em um array de controle. Ao fechar o caixa, o sistema percorre a lista
-// de pedidos, calcula os valores finais de cada um (aplicando as taxas quando necessário) e exibe o
-// faturamento total do estabelecimento.
+// Concurso de Projetos de Extensão Reforest
 
-abstract class Pedido{
-    private _numeroMesa: number
-    private _valorIngredientes: number
+// O projeto socioambiental &quot;Flor&amp;Ser&quot; abriu inscrições para novas propostas de reflorestamento no
+// campus. Cada projeto inscrito possui título, coordenador e uma nota de avaliação avaliada de forma
+// estrita (protegida por métodos de validação para que não receba valores fora do intervalo de 0 a 10).
+// Existem Projetos Verdes (focados em plantio urbano) e Projetos Culturais (focados em
+// conscientização). O usuário deve preencher a lista de projetos avaliados através do terminal. O
+// programa deve calcular a média aritmética de todas as notas usando estruturas de array e, em seguida,
+// listar de forma inversa à inscrição quais projetos ganharam nota acima da média da competição.
 
-    constructor(numeroMesa: number, valorIngredientes: number){
-        this._numeroMesa = numeroMesa
-        this._valorIngredientes = valorIngredientes
-    }
-    public get numeroMesa(): number {
-        return this._numeroMesa
-    }
-    public set numeroMesa(value: number) {
-        this._numeroMesa = value
-    }
-   
-    public get valorIngredientes(): number {
-        return this._valorIngredientes
-    }
-    public set valorIngredientes(value: number) {
-        this._valorIngredientes = value
-    }
-
-    abstract calcularValor(): number
-
-    abstract exibirFatura(): number{
-        alert(
-            
-        )
-    }
-
-}
-class PedidoEntrega extends Pedido{
-    private _taxa: number
-    private _endereco: string
-
-    public get endereco_1(): string {
-        return this._endereco
-    }
-
-    public get taxa(): number {
-        return this._taxa
-    }
-
-    constructor(numeroMesa: number, valorIngredientes: number, taxa: number,  endereco: string){
-        super(numeroMesa, valorIngredientes)
-        this._taxa = taxa
-        this._endereco = endereco
-    }
-
-   calcularValor(): number {
-        return this.valorIngredientes + this.taxa
-    }
-    exibirFatura(): number{
-
-}
-class PedidoLocal extends Pedido{
-    constructor()
-}

@@ -71,16 +71,12 @@ let continuar = "S"
 
 while (continuar.toUpperCase() === "S") {
 
-    let tipo = Number(
-        prompt("Digite o tipo de curso:\n1 - Curso Livre\n2 - Curso Técnico")
-    )
+    let tipo = Number(prompt("Digite o tipo de curso:\n1 - Curso Livre\n2 - Curso Técnico"))
 
-    let titulo = String(
-        prompt("Digite o título do curso:")
-    )
+    let titulo = String(prompt("Digite o título do curso:"))
 
     let cargaHoraria = Number(
-        prompt("Digite a carga horária do curso:")
+prompt("Digite a carga horária do curso:")
     )
 
     if (tipo === 1) {
